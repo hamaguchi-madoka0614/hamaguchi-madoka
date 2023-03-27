@@ -17,7 +17,7 @@ public class Variable1 {
 			System.out.println("私の自己紹介をします。");
 		String name ="浜口円";
 			System.out.println("名前は"+name+"です。");
-		String gender ="女";
+		char gender ='女';
 			System.out.println("性別は"+gender+"です。");
 		int old=21;
 			System.out.println("年齢は"+old+"です。");
