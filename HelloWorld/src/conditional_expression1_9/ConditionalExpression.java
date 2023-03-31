@@ -45,6 +45,6 @@ public class ConditionalExpression {
 		}else {
 			System.out.println("私は疲れています。");
 		}
-		System.out.println(isTired==0 ? study+"を続けます":"私は疲れています。");
+		System.out.println(isTired==0 ? study+"を続けます":"");
 	}
 }
