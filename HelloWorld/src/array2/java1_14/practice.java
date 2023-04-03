@@ -26,13 +26,16 @@ public class practice {
 		// TODO 自動生成されたメソッド・スタブ
 		String[] strArray = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j" };
 		String str = "i";
+		String str1="";
 		for (int k = 0; k <= 3; k++) {
 			System.out.println(strArray[k]);
 		}
+		System.out.println(str1);
 		for (int m = 0; m <= 9; m++) {
 			if (strArray[m].equals(str)) {
 				continue;
 			}
+			
 			System.out.println(strArray[m]);
 		}
 	}
