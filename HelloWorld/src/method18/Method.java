@@ -43,6 +43,7 @@ public class Method {
 		    return a;
 		}
 		// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
+		// ※小数点以下も表示されるようにしてください。
 		public static double ave(int[] a) {
 			int c=0;
 			for(int i=0;i<a.length;i++) {
@@ -51,10 +52,6 @@ public class Method {
 			System.out.println((double)c/a.length);
 			return (double)c/a.length;
 		}
-		
 }
-		
-		
-		// ※小数点以下も表示されるようにしてください。
 	
 
