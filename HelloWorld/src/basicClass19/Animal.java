@@ -1,5 +1,6 @@
 package basicClass19;
-import java.time.LocalDateTime;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Animal {
 	public static void main(String[] args) {
@@ -15,8 +16,9 @@ public class Animal {
 
 
 		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
-		LocalDateTime ldt = LocalDateTime.now();
-		System.out.println(ldt);
+		Date date = new Date();
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println(df.format(date));
 	}
 
 }
