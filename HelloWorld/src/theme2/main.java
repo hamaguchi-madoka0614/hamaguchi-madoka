@@ -34,7 +34,7 @@ public class main {
 		Profile pr = new Profile();
 		pr.food = "寿司";
 
-		// Profile classのfoodを出力
+		// Profile classの食べ物を出力
 		System.out.println("この"+pr.food+"はうまい");
 		System.out.println(pr.food+"は和食です");
 
