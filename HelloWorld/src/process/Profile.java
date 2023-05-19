@@ -7,12 +7,12 @@ public class Profile {
 	public String food;
 	
 	// 国名に日本を代入
-	public Profile() {
+	public void setLand() {
 		this.land = "日本";
 	}
 	
 	// 食べ物に寿司を代入
-	public Profile(String food) {
+	public void setFood() {
 		this.food = "寿司";
 	}
 	
