@@ -18,25 +18,34 @@ package theme2;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
 import process.Profile;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 
 		// 呼び出し
 		Profile p = new Profile();
-		// Profile classの国名を出力
-		System.out.println("こんにちは！ここは"+p.land+"です！");
-
+		p.setLand();
+		// NullチェックとProfile classの国名を出力
+		if(Objects.nonNull(p)) {
+			System.out.println("こんにちは！ここは"+p.land+"です！");
+		} else {
+			System.out.println("landは空です。");
+		}
 		// 呼び出し
 		Profile pr = new Profile();
-		pr.food = "寿司";
-
-		// Profile classの食べ物を出力
-		System.out.println("この"+pr.food+"はうまい");
-		System.out.println(pr.food+"は和食です");
+		pr.setFood();
+		// NullチェックとProfile classの食べ物を出力
+		if(Objects.nonNull(pr)) {
+			System.out.println("この"+pr.food+"はうまい");
+			System.out.println(pr.food+"は和食です");
+		} else {
+			System.out.println("foodは空です");
+		}
+		
 
 		// 現在の日時を「yyyy/MM/dd H:m:s」形式で変数に代入して、コンソールに出力してください
 		Date date = new Date();
