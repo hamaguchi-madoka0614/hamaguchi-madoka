@@ -15,5 +15,4 @@ public class Profile {
 	public void setFood() {
 		this.food = "寿司";
 	}
-	
 }

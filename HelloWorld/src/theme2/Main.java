@@ -23,15 +23,13 @@ import java.util.Objects;
 import process.Profile;
 
 public class Main {
-
 	public static void main(String[] args) {
-
 		// 呼び出し
 		Profile p = new Profile();
 		p.setLand();
 		// NullチェックとProfile classの国名を出力
 		if(Objects.nonNull(p)) {
-			System.out.println("こんにちは！ここは"+p.land+"です！");
+			System.out.println("こんにちは！ここは" + p.land + "です！");
 		} else {
 			System.out.println("landは空です。");
 		}
@@ -40,19 +38,14 @@ public class Main {
 		pr.setFood();
 		// NullチェックとProfile classの食べ物を出力
 		if(Objects.nonNull(pr)) {
-			System.out.println("この"+pr.food+"はうまい");
-			System.out.println(pr.food+"は和食です");
+			System.out.println("この" + pr.food + "はうまい");
+			System.out.println(pr.food + "は和食です");
 		} else {
 			System.out.println("foodは空です");
 		}
-		
-
 		// 現在の日時を「yyyy/MM/dd H:m:s」形式で変数に代入して、コンソールに出力してください
 		Date date = new Date();
 		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		System.out.println("今の現在日時は"+df.format(date)+"です");
+		System.out.println("今の現在日時は" + df.format(date) + "です");
 	}
-
 }
-
-
