@@ -19,3 +19,4 @@ public class sub25 extends process{
 		super.setDefense(Random());
 	}
 }
+

@@ -14,7 +14,7 @@ public class process {
 	}
 	/* 名前を設定する */
 	public void setName(String name) {
-		this.name = "ゴリ";
+		this.name = name;
 	}
 	/* hpを取得する */
 	public int getHp() {
