@@ -1,6 +1,4 @@
 package lesson25Execute;
-import java.util.Scanner;
-
 import misson25.sub25;
 /*
 
@@ -28,10 +26,8 @@ public class Main{
 	public static void main(String[] args) {
 		/* sub25クラスを呼び出す */
 		sub25 sub = new sub25();
-		
-		/* scannerクラスを作成*/
-		Scanner scan = new Scanner("ゴリさん");
-		String name =scan.nextLine();
+		/* 文字列の入力を受ける */
+		String name = new java.util.Scanner(System.in).nextLine();
 		
 		/* キャラクターの能力を表示 */
 		System.out.println("こんにちは「" + name + "」さん");
@@ -42,7 +38,6 @@ public class Main{
 		System.out.println("素早さ：" + sub.getSpeed());
 		System.out.println("防御力：" + sub.getDefense());
 		System.out.println("さあ冒険に出かけよう！");
-		scan.close();
 		
 	}
 }
