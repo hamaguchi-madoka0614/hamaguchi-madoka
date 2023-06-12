@@ -1,21 +1,13 @@
 package misson25;
 
-public class process {
-	private String name; // 名前を宣言
+public class Process {
 	private int hp; // hpを宣言
 	private int mp; // mpを宣言
 	private int attack; // 攻撃力を宣言
 	private int speed; // 素早さを宣言
 	private int defense; // 防御力を宣言
 	
-	/* 名前を取得する */
-	public String getName() {
-		return name;
-	}
-	/* 名前を設定する */
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 	/* hpを取得する */
 	public int getHp() {
 		return hp;
