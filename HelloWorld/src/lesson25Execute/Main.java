@@ -1,5 +1,5 @@
 package lesson25Execute;
-import misson25.sub25;
+import misson25.Sub25;
 /*
 
 名前を入力したら下記がコンソールに出力されるように作ってください
@@ -25,12 +25,17 @@ import misson25.sub25;
 public class Main{
 	public static void main(String[] args) {
 		/* sub25クラスを呼び出す */
-		sub25 sub = new sub25();
-		/* 文字列の入力を受ける */
-		String name = new java.util.Scanner(System.in).nextLine();
+		Sub25 sub = new Sub25();
+		
+		/* 値を代入 */
+		sub.setHp((int)(Math.random() * 1000) + 1);
+		sub.setMp((int)(Math.random() * 1000) + 1);
+		sub.setAttack((int)(Math.random() * 1000) + 1);
+		sub.setSpeed((int)(Math.random() * 1000) + 1);
+		sub.setDefense((int)(Math.random() * 1000) + 1);
 		
 		/* キャラクターの能力を表示 */
-		System.out.println("こんにちは「" + name + "」さん");
+		System.out.println("こんにちは「" + sub.name + "」さん");
 		System.out.println("ステータス");
 		System.out.println("HP：" + sub.getHp());
 		System.out.println("MP：" + sub.getMp());
