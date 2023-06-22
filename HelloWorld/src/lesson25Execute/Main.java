@@ -28,14 +28,15 @@ public class Main{
 		Sub25 sub = new Sub25();
 		
 		/* 値を代入 */
-		sub.setHp((int)(Math.random() * 1000) + 1);
-		sub.setMp((int)(Math.random() * 1000) + 1);
-		sub.setAttack((int)(Math.random() * 1000) + 1);
-		sub.setSpeed((int)(Math.random() * 1000) + 1);
-		sub.setDefense((int)(Math.random() * 1000) + 1);
+		sub.getName();
+		sub.setHp((int)(Math.random()*1000)+1);
+		sub.setMp((int)(Math.random()*1000)+1);
+		sub.setAttack((int)(Math.random()*1000)+1);
+		sub.setSpeed((int)(Math.random()*1000)+1);
+		sub.setDefense((int)(Math.random()*1000)+1);
 		
 		/* キャラクターの能力を表示 */
-		System.out.println("こんにちは「" + sub.name + "」さん");
+		System.out.println("こんにちは「" + sub.getName() + "」さん");
 		System.out.println("ステータス");
 		System.out.println("HP：" + sub.getHp());
 		System.out.println("MP：" + sub.getMp());

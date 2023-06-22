@@ -1,9 +1,12 @@
 package misson25;
 import java.util.Scanner;
 
-/* prosessクラスsub25クラスに継承させる */
+/* Sub25クラスにProcessクラスを承継 */
 public class Sub25 extends Process{
-	/* 文字列の入力を受ける */
+	public Sub25() {
+		super.setName(name);
+	}
 	Scanner scanner = new Scanner(System.in);
-	public String name = scanner.nextLine();
+	String name = scanner.nextLine();
+	
 }
