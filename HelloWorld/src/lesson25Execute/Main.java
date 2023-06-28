@@ -1,4 +1,6 @@
 package lesson25Execute;
+import java.util.Scanner;
+
 import misson25.Sub25;
 /*
 
@@ -24,11 +26,14 @@ import misson25.Sub25;
 */
 public class Main{
 	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String name = sc.nextLine();
 		/* sub25クラスを呼び出す */
 		Sub25 sub = new Sub25();
 		
 		/* 値を代入 */
-		sub.getName();
+		sub.setName(name);
 		sub.setHp((int)(Math.random()*1000)+1);
 		sub.setMp((int)(Math.random()*1000)+1);
 		sub.setAttack((int)(Math.random()*1000)+1);
@@ -44,7 +49,6 @@ public class Main{
 		System.out.println("素早さ：" + sub.getSpeed());
 		System.out.println("防御力：" + sub.getDefense());
 		System.out.println("さあ冒険に出かけよう！");
-		
 	}
 }
 
